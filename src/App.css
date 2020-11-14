@@ -465,7 +465,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* projects */
-
 .projects {
   background: url("./Components/images/background1.jpg") center center no-repeat;
   background-size: cover;
@@ -625,4 +624,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects2 a:hover {
   color: #64ffda;
+}
+
+.hero-container
+{
+  background: url("./Components/images/background.png") center;
+  background-size: cover;
+  padding: 60px 0;
+  position: relativ
 }

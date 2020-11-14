@@ -3,12 +3,10 @@ import './TitlePage.css';
 import githubLogo from "./images/github.png"
 import devpostLogo from "./images/devpost.png"
 import linkedInLogo from "./images/linkedin.png"
-import headLoopVideo from "./images/background.mp4"
 
 function TitlePage() {
   return (
     <div className='hero-container'>
-      <video src={headLoopVideo} autoPlay loop muted />
       <section id="headSection" class="d-flex align-items-center justify-content-center">
         <div class="container" data-aos="fade-up">
 

@@ -29,6 +29,7 @@ import runeterrabot3 from './Components/images/runeterrabot3.JPG'
 import desktopCleaner2 from './Components/images/desktopCleaner2.PNG'
 import BitcoinPrice1 from './Components/images/BitcoinPrice1.PNG'
 import BitcoinPrice2 from './Components/images/BitcoinPrice2.PNG'
+import LoLProfileCustomizer from './Components/images/LoLProfileCustomizer.png'
 
 function App() {
   const [show, setShow] = React.useState(false);
@@ -70,6 +71,11 @@ function App() {
   const [show9, setshow9] = React.useState(false);
   const handleshow9Close = () => setshow9(false);
   const handleshow9Show = () => setshow9(true);
+
+  const [show10, setshow10] = React.useState(false);
+  const handleshow10Close = () => setshow10(false);
+  const handleshow10Show = () => setshow10(true);
+  
   return (
     <div className="App">
       <TitlePage />
@@ -120,7 +126,17 @@ function App() {
                 </div>
               </div>
             </div>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <div class="col-lg-4 col-md-6">
+              <div class="title">
+                <div class="pic"><img src={LoLProfileCustomizer} class="img-fluid" alt="" onClick={handleshow10Show} /></div>
+                <div class="info">
+                  <h4><a href="https://github.com/jackyliu1999/LoLProfileCustomizer">LoL Profile Customizer</a></h4>
+                  <span>Python</span>
+                </div>
+              </div>
+            </div>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
           </div>
 
 
@@ -477,6 +493,33 @@ function App() {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleshow9Close}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal size="lg" show={show10} onHide={handleshow10Close}>
+        <Modal.Header closeButton>
+          <Modal.Title>LoL Profile Customizer</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <b>GitHub: <a href="https://github.com/jackyliu1999/LoLProfileCustomizer" >github.com/jackyliu1999/LoLProfileCustomizer</a></b><br />
+          <b>Video Demo: </b><br />
+          <center><iframe width="700" height="500"
+            src="https://www.youtube.com/embed/w17E0kt0C9g">
+          </iframe></center>
+          <b>Dependencies: </b><br />
+          <li>lcu-driver</li>
+          <b>What it does and how it was built: </b><br />
+          Lol Profile Customizer allows League of Legends players to style their client-sided profiles by making use of public Riot Games APIs, connecting to the League of Legends client through lcu-driver.
+          <br /><b>Functionalities: </b><br />
+          <li>Change Summoner Icon to any owned Summoner Icon</li>
+          <li>Change client-sided Summoner Icon to any Summoner Icon in the game, other uses will be able to see this change in their client</li>
+          <li>Change Summoner profile background to any skin in the game, based on Skin ID</li>
+          <li>Change displayed Summoner chat rank</li>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleshow10Close}>
             Close
           </Button>
         </Modal.Footer>
