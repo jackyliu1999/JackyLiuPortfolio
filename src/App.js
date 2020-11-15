@@ -211,9 +211,9 @@ function App() {
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="projects2__item">
-                    <a href="https://github.com/jackyliu1999/Coronaverse"> <img src={GitLogo} alt="" /></a>
+                    <a href="https://github.com/jackyliu1999/COVID19-Stats-Tracker"> <img src={GitLogo} alt="" /></a>
                             &nbsp; <img src={infoIcon} onClick={handleshow3Show} alt="" />
-                    <a href="https://github.com/jackyliu1999/Coronaverse"><h4 style={{ color: "#e6f1ff" }}>Coronaverse</h4></a>
+                    <a href="https://github.com/jackyliu1999/COVID19-Stats-Tracker"><h4 style={{ color: "#e6f1ff" }}>COVID19 Stats Tracker</h4></a>
                     <p style={{ color: "white" }}>Created for Hackathon, BOTHACKS. Incorporates APIs that draw live data including total cases, total recovered and total deaths in order to inform the user of the severity and numbers of the COVID-19 pandemic. </p>
                   </div>
                 </div>
@@ -321,19 +321,18 @@ function App() {
 
       <Modal size="lg" show={show3} onHide={handleshow3Close}>
         <Modal.Header closeButton>
-          <Modal.Title>Coronaverse - BOTHACKS</Modal.Title>
+          <Modal.Title>COVID19 Stats Tracker - BOTHACKS</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <b>Devpost: <a href="https://devpost.com/software/coronaverse" >devpost.com/software/coronaverse</a></b><br />
-          <b>GitHub: <a href="https://github.com/jackyliu1999/Coronaverse" >github.com/jackyliu1999/Coronaverse</a></b><br />
+          <b>GitHub: <a href="https://github.com/jackyliu1999/COVID19-Stats-Tracker" >github.com/jackyliu1999/COVID19-Stats-Tracker</a></b><br />
           <b>Collaborated with:</b> <a href="https://github.com/jacky-h-nguyen" >Jacky Nguyen</a>, <a href="https://github.com/ansonwong250" >Anson Wong</a><br />
           <b>Inspiration:</b><br />
-        COVID-19 is a worldwide pandemic that was first identified in late 2019 in Wuhan, China. As of August 2020, more than 20 million cases resulting in over 800,000 deaths have been documented worldwide. Information regarding the coronavirus is scattered and countless individuals have found it exceedingly difficult to scavenge for information while balancing their readjusted life due to the pandemic. Coronaverse acts as a haven of live information regarding the virus, incorporating various pandemic-related APIs as well as voice activated commands.
+        COVID-19 is a worldwide pandemic that was first identified in late 2019 in Wuhan, China. As of August 2020, more than 20 million cases resulting in over 800,000 deaths have been documented worldwide. Information regarding the coronavirus is scattered and countless individuals have found it exceedingly difficult to scavenge for information while balancing their readjusted life due to the pandemic. COVID19 Stats Tracker acts as a haven of live information regarding the virus, incorporating various pandemic-related APIs as well as voice activated commands.
         <br /> <b>What it does:</b><br />
-        Coronaverse incorporates APIs that draw live data including total cases, total recovered and total deaths in order to inform the user of the severity and numbers of the COVID-19 pandemic. Furthermore, the user is able to filter results in accordance to their own country. Coronaverse also features commands that links the user to pandemic-related resources. Due to the fact that social media and the news are ingrained into the lives of our society, Coronaverse displays the most recent news articles and Reddit posts regarding COVID-19. Lastly, all of commands are activated via voice recognition, allowing easy access for each and every individual.
+        COVID19 Stats Tracker incorporates APIs that draw live data including total cases, total recovered and total deaths in order to inform the user of the severity and numbers of the COVID-19 pandemic. Furthermore, the user is able to filter results in accordance to their own country. COVID19 Stats Tracker also features commands that links the user to pandemic-related resources. Due to the fact that social media and the news are ingrained into the lives of our society, COVID19 Stats Tracker displays the most recent news articles and Reddit posts regarding COVID-19. Lastly, all of commands are activated via voice recognition, allowing easy access for each and every individual.
         <img class="img-fluid" src={cverseCommands.PNG} alt="" />
           <br /> <b>How it was built:</b><br />
-        Coronaverse was built using Python incorporating the libraries: requests, Tkinter, datetime, webbrowser, newsapi, speech_recognition and pyttsx3. The requests module was utilized in order to web scrape data for live stats of the pandemic. Datetime was used to display the current time while the webbrowser library was used to open links to COVID-19 resources. The newsapi was used to fetch the top pandemic-related news articles. Lastly, in conjunction with all the commands, speech_recognition allows the user to activate commands via voice while pyttsx3 reads out prompts.
+          COVID19 Stats Tracker was built using Python incorporating the libraries: requests, Tkinter, datetime, webbrowser, newsapi, speech_recognition and pyttsx3. The requests module was utilized in order to web scrape data for live stats of the pandemic. Datetime was used to display the current time while the webbrowser library was used to open links to COVID-19 resources. The newsapi library was used to fetch the top pandemic-related news articles. Lastly, in conjunction with all the commands, speech_recognition allows the user to activate commands via voice while pyttsx3 reads out prompts.
         <br /> <b>Demo: </b> <br />
           <img class="img-fluid" src={cversestatsCanada} alt="" />
           <img class="img-fluid" src={cverseReddit} alt="" />
